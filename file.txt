@@ -1,0 +1,28 @@
+Definition
+An ImageView is a user interface element used to display image resources (such as Bitmaps, Drawables, or Vector graphics) within an Android application. It acts as a container that handles the scaling, tinting, and positioning of images to fit the layout.
+Key Attributes of ImageView
+In an examination, you should categorize these into Functional and Styling attributes for better clarity.
+1. android:src
+Description: Specifies the source image file to be displayed.
+Values: Usually references a file in the @drawable or @mipmap folders.
+Example: android:src="@drawable/logo"
+2. android:scaleType
+Description: Controls how the image should be resized or moved to match the size of the ImageView container.
+Common Values:
+center: Displays the image in the center without scaling.
+centerCrop: Scales the image uniformly so that both dimensions are equal to or larger than the view (edges may be cropped).
+fitCenter: Scales the image to fit inside the view while maintaining the aspect ratio (most common).
+fitXY: Scales the image to exactly match the view dimensions (can cause distortion).
+3. android:contentDescription
+Description: Provides a textual description of the image. This is vital for Accessibility (Screen readers for visually impaired users).
+Example: android:contentDescription="User Profile Picture"
+4. android:tint
+Description: Applies a color filter over the image. It is often used to change the color of icons dynamically.
+Example: android:tint="#FF0000" (Turns a white icon red).
+5. android:adjustViewBounds
+Description: A boolean value that, when set to true, allows the ImageView to adjust its bounds to preserve the aspect ratio of its drawable.
+Values: true or false.
+6. android:alpha
+Description: Sets the transparency level of the image.
+Values: A float between 0.0 (invisible) and 1.0 (fully opaque).
+Example XML Implementation
